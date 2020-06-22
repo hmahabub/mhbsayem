@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Hey Genius</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/portfolio.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="div_main">
+	<div class="header mobile">
+
+			<a href="/">Home</a>
+			<a href="/portfolio">Portfolio</a>
+		</div>
+
+		</div>
+	<div class="view_setter">
+		{% for a in projects %}
+		<div class="view">
+			<img src="{{ MEDIA_URL }}/{{a.image}}">
+			<p>  {{ a.detail}}</p>
+			<a href="{{a.link}}" target="_blank">Visit</a>
+		</div>
+		{% endfor %}
+
+		</div>
+	</div>
+	<div class="paragraph">
+	<div class="laptop">
+		<h3>Links</h3>
+			<a href="/">Home</a>
+			<a href="/portfolio">Portfolio</a>
+		</div>
+	<h3>Knock Me On:</h3>
+	<a href="http://m.me/findsayem" target="_blank"><i class="fa fa-facebook"></i></a>
+	<a href="http://linkedin.com/in/mahabub-sayem-2a401b16b" target="_blank"><i class="fa fa-linkedin"></i></a>
+	<a href="mailto:hasanbijoybd@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+	
+</div>
+</div>
+</body>
+</html>

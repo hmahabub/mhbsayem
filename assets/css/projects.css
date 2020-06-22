@@ -1,0 +1,172 @@
+body{
+	
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background-color: rgba(213, 222, 217, 0.7);
+	}
+
+.div_main{
+	
+	padding : 20px 20px;
+	font-size: 15px;
+}
+
+.header{
+	display:block;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	margin: 0px 0px 10px;
+}
+
+.header a{
+	color:mediumseagreen;
+	padding: 20px;
+}
+
+.header a:hover{
+	color: white;
+}
+
+.view{
+	text-align: center;
+	padding:20px 20px;
+	display:block;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	margin-bottom: 20px
+}
+
+.view img{
+	height: 100%;
+	width: 100%;
+	border:1px solid black;
+	border-bottom: 5px solid black;
+	border-radius: 20px ;
+}
+
+a{	
+	font-size: 25px;
+	text-decoration: none;
+	cursor: pointer;
+	color:white;
+}
+
+a:hover{
+	color:green;
+}
+
+.paragraph{
+	padding-bottom: 25px;
+	border-bottom: 1px solid gray;
+}
+.paragraph i{
+	padding-left: 30px;
+
+}
+
+.paragraph a{
+	color:mediumseagreen;
+}
+
+.paragraph a:hover{
+	color:black;
+}
+
+.laptop{
+	display:none;
+}
+
+@media only screen and (min-width: 600px){
+	.div_main{
+	margin:auto;
+	width: 90%;
+	display:grid;
+	grid-template-columns:3fr 1fr;
+	grid-column-gap: 10px;
+
+
+	}
+
+	.view{
+		height: 60%;
+		width: 80%;
+		margin: 50px;
+		margin-bottom: 100px;
+		max-height: 500px;
+		max-width: 200px;
+
+	}
+
+	.view_setter div:nth-child(odd) {
+		 padding: 50px 50px;
+		 
+		 
+		}
+
+	.view_setter div:nth-child(even) {
+		  padding: 40px 40px;
+		 margin-left: auto;
+  		
+		
+		}
+
+	.mobile{
+		display:none;
+	}
+
+
+
+	.paragraph a{
+		border-bottom: 1px solid lightgray;
+	}
+
+	.paragraph a:hover{
+		border-bottom: 1px solid black;
+	}
+
+	.paragraph i{
+		
+		text-align: center;
+		margin: auto;
+		display:block;
+		padding: 20px 0px 20px;
+	
+
+	}
+	.paragraph i:hover{
+			border-bottom: 1px solid black;
+			}
+
+	
+	.paragraph h3{
+		text-align: center;
+		color : gray;
+	}
+
+
+	.laptop{
+	display:block;
+	text-align: center;
+}
+	
+	.laptop h3{
+		font-size: 30px;
+		color : gray;
+	}
+
+
+	.laptop a{
+		color:mediumseagreen;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display:block;
+		
+	}
+
+	.laptop a:hover{
+		color: black;
+
+
+	}
+
+	
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Welcome Genius</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="div_main ">
+		<div class="header mobile">
+			<a href="/">Home</a>
+			<a href="/portfolio">Portfolio</a>
+		</div>
+
+		<div>
+
+<div class="laptop">
+<img class="pro_pic" src="{% static 'image\IMG_20180225_172506 (2).jpg' %}">
+
+<h6>Hasan Mahabub<br><br></h6>
+
+	<h3>
+		Front End Developer,<br>
+		Back End Developer,<br>
+		Digital Marketer<br>
+		& Mentor.
+
+	</h3>
+
+</div>
+</div>
+<div class="about">
+<div class="paragraph">
+<h5>"Whatever your problem is, You just need the right machine with right code."<br><br></h5>
+	<h4>"A lot of them can be solved in Python.<br>
+So I am here to build a PYTHON APP to solve your problem."</h4>
+
+</div>
+<div class="paragraph">
+<h3>Some specifics :</h3>
+<nav><ol>
+	{% for a in specifics %}
+<li>{{a.specifics}}</li>
+	{% endfor %}
+</ol></nav>
+
+</div>
+
+<div class="paragraph">
+<h3>My service and tools:</h3>
+<p>1.Front end developer(responsive web design)<br>
+    -html,css<br><br>
+
+2. Back End Developer <br>
+       -python,django,django rest<br><br>
+
+3. Mentor <br>
+   - With my digital marketing experience I can advice you with your website growth and traffic. <br><br>
+</p>
+
+</div>
+
+<div class="paragraph">
+<h3>I Will Need from You:</h3>
+<nav><ul>
+	{% for a in service %}
+<li>{{a.service}}</li>
+	{% endfor %}
+</ul></nav>
+</div>
+
+<div class="paragraph">
+<h3>Pacakge:</h3>
+<div class="equal">
+<div class="package package_left"> <i class="fa fa-clone">BASIC</i>
+
+<nav><ul>
+	{% for a in basic %}
+<li>{{a.basic_detail}}</li>
+	{% endfor %}
+</ul></nav>
+	<p>Price: {{ b_price.basic_price}}$</p>
+	<a>Order</a>
+</div>
+<div class="package package_right"><i class="fa fa-clone">PREMIUM</i>
+<nav><ol>
+	{% for x in premium %}
+<li>{{x.premium_detail}}</li>
+	{% endfor %}
+</ol></nav>
+	<p>Price: {{ p_price.premium_price}}$</p>
+	<a>Order</a>
+</div>
+
+</div>
+
+</div>
+<div class="paragraph">
+<h3>Leave a maessage:</h3>
+<form action="send" method="post">
+	{% csrf_token %}
+	<input type="text" name="name" placeholder="Name*">
+	<input type="email" name="email" placeholder="Email*">
+	<input class="message" type="text" name="message" placeholder="message...">
+	<input type="submit" value="submit">
+</form>
+</div>
+</div>
+
+
+
+<div class="paragraph contact">
+	<div class="laptop">
+		<h3>Links</h3>
+			<a href="/">Home</a>
+			<a href="/portfolio">Portfolio</a>
+		</div>
+	<h4>Knock Me On:</h4>
+	<a href="http://m.me/findsayem" target="_blank"><i class="fa fa-facebook"></i></a>
+	<a href="http://linkedin.com/in/mahabub-sayem-2a401b16b" target="_blank"><i class="fa fa-linkedin"></i></a>
+	<a href="mailto:hasanbijoybd@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+</div>
+</div>
+
+</body>
+</html>

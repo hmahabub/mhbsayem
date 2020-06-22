@@ -1,0 +1,193 @@
+	body{
+		
+		background-color: rgba(213, 222, 217, 0.7);
+		
+		
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		
+		}
+
+	.div_main{
+		background-color: rgba(255, 255, 255, 0.7);
+		padding : 20px 20px;
+		font-size: 25px;
+	}
+
+	.header{
+		display:block;
+		background-color: black;
+		padding: 10px 10px 10px;
+		margin: 0px 0px 10px;
+	}
+	a{
+		text-decoration: none;
+		
+	}
+	.header a{
+		color:mediumseagreen;
+		padding: 20px;
+	}
+
+	.header a:hover{
+		color: white;
+	}
+
+	.pro_pic{
+		display:block;
+		width: 100px;
+		height: 100px;
+		margin:auto;
+		border-radius: 100px;
+		border: 1px solid gray;
+	}
+	.paragraph{
+		padding-bottom: 25px;
+		border-bottom: 1px solid gray;
+	}
+
+
+	.paragraph i{
+		padding-left: 30px;
+
+	}
+
+	.paragraph a{
+		color:mediumseagreen;
+	}
+
+	.paragraph a:hover{
+		color:black;
+	}
+
+	.laptop{
+		display:none;
+	}
+
+	h5{
+		text-align: center;
+		padding:20px;
+		color:gray;
+	}
+	h4{
+		text-align: center;
+		padding:20px;
+	}
+
+	.package{
+		padding:10px 10px;
+		min-height:500px;
+		min-width: 70px;
+		display:block;
+		border-radius: 30px;
+		box-shadow: -5px 5px 5px;
+		margin: 10px 5px 10px;
+		text-align: center;
+	}
+
+	.package_right{
+		background-color: rgba(164,241,198,1);
+	}
+
+	.package_left{
+		background-color: rgba(241,241,164,1);
+	}
+
+	.package i{
+			border-bottom: 1px solid black;
+
+
+		}
+
+	.package a{
+		
+		padding: 5px;
+		border-radius: 25px;
+		border: 2px solid mediumseagreen;
+		background-color: black;
+		cursor: pointer;
+	}
+
+	.package a:hover{
+		color:white;
+		border: 2px solid lightgray;
+	}
+
+	input{
+		display: block;
+		padding: 20px;
+		margin:15px;
+
+	}
+
+	.message{
+		padding: 40px 20px;
+
+	}
+@media only screen and (min-width: 600px){
+	.div_main{
+	margin:auto;
+	width: 90%;
+	display:grid;
+	grid-template-columns:2fr 4fr 1fr;
+	grid-column-gap: 10px;
+
+}
+	.mobile{
+		display: none;
+	}
+
+	.paragraph i{
+		text-align: center;
+		margin: auto;
+		display:block;
+		padding: 20px 0px 20px;
+	
+
+	}
+
+	.paragraph i:hover{
+			border-bottom: 1px solid black;
+			}
+
+	.laptop{
+	display:block;
+	text-align: center;
+}
+	
+	.laptop h3{
+		font-size: 30px;
+		color : gray;
+	}
+	 h4{
+		text-align: center;
+		color : gray;
+	}
+
+	.laptop a{
+		color:mediumseagreen;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display:block;
+		
+	}
+
+	.laptop a:hover{
+		color: black;
+		border-bottom: 1px solid black;
+
+
+	}
+
+
+}
+
+@media only screen and (min-width: 900px){
+
+	.package{
+		display:inline-block;
+		width: 40%;
+	
+	}
+
+	
+}
