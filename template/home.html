@@ -77,20 +77,18 @@ So I am here to build a PYTHON APP to solve your problem."</h4>
 <div class="equal">
 <div class="package package_left"> <i class="fa fa-clone">BASIC</i>
 
-<nav><ul>
 	{% for a in basic %}
-<li>{{a.basic_detail}}</li>
+<p>-{{a.basic_detail}}</p>
 	{% endfor %}
-</ul></nav>
+
 	<p>Price: {{ b_price.basic_price}}$</p>
 	<a>Order</a>
 </div>
 <div class="package package_right"><i class="fa fa-clone">PREMIUM</i>
-<nav><ol>
-	{% for x in premium %}
-<li>{{x.premium_detail}}</li>
+
+	{% for a in pre %}
+<p>-{{a.premium_detail}}</p>
 	{% endfor %}
-</ol></nav>
 	<p>Price: {{ p_price.premium_price}}$</p>
 	<a>Order</a>
 </div>

@@ -7,9 +7,9 @@ def home_page(request):
     serv = service.objects.all()
     bas = basic.objects.all()
     b_price = basic_price.objects.get(id=1)
-    pre = basic.objects.all()
+    pre = premium.objects.all()
     p_price = premium_price.objects.get(id=1)
-    return render(request, "home.html", {"specifics":spec, "service":serv, "basic":bas,"b_price":b_price,"p_price":p_price, "premium":pre})
+    return render(request, "home.html", {"specifics":spec, "service":serv, "basic":bas,"b_price":b_price,"p_price":p_price, "pre":pre})
 
 def portfolio(request):
     project = projects.objects.all()
